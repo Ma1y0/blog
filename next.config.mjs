@@ -13,5 +13,12 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images : {
+    remotePatterns: [
+      {
+        hostname: "**.githubusercontent.com/**"
+      }
+    ]
+  }
 };
 export default config;
