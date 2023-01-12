@@ -17,6 +17,9 @@ const config = {
     remotePatterns: [
       {
         hostname: "**.githubusercontent.com/**"
+      },
+      {
+        hostname: "**.fbcdn.**"
       }
     ]
   }
