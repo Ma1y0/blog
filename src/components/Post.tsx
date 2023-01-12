@@ -1,7 +1,18 @@
 import { type NextPage } from "next";
 import Link from "next/link";
 
-const Post: NextPage = ({ post }) => {
+// type Post = {
+//     id: string;
+//     authorId: string;
+//     authorName: string;
+//     title: string;
+//     description?: string;
+//     content: string;
+//     createdAt: any;
+//     updatedAt: any;
+// }
+
+const Post: React.FC<{ post: any}> = ({ post }) => {
     return (
         <div className="border p-3">
             <Link href={`/posts/${post.id}`} className="Linksgjegoe">

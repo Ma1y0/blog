@@ -1,8 +1,5 @@
-import { GetStaticProps, type NextPage } from "next"
+import {type NextPage } from "next"
 import Head from "next/head"
-import Link from "next/link"
-import { signIn, signOut, useSession } from "next-auth/react"
-
 import { trpc } from "../utils/trpc"
 import Post from "../components/Post"
 
@@ -28,7 +25,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col gap-3 flex-wrap m-3">
         {posts.data?.map((post) => (
-            <div className="" key={post.id}>
+            <div className="" key={post.id ?? ""}>
               <Post post={post} />
             </div>
         ))}
