@@ -9,3 +9,23 @@ body {
     @apply text-white;
     @apply  bg-gradient-to-b from-[#2e026d] to-[#15162c];
 }
+
+:root {
+    color-scheme: dark;
+}
+
+.bg-post {
+    background-color: #3b3b3b;
+}
+
+.markdown-preview h1 {
+    @apply text-4xl;
+}
+
+.markdown-preview h2 {
+    @apply text-3xl;
+}
+
+.markdown-preview h3 {
+    @apply text-2xl;
+}

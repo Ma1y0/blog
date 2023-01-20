@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const Post: React.FC<{ post: any}> = ({ post }) => {
     return (
-        <div className="border p-3">
+        <div className="border p-3 rounded-lg">
             <Link href={`/posts/${post.id}`} className="Linksgjegoe">
                 <h1 className="font-semibold text-5xl">{post.title}</h1>
                 <small className="">By {post.authorName}</small>
